@@ -24,7 +24,7 @@ const QuoteMachine = (props) => (
             <IconButton 
                 id='tweet-quote'
                 target='_blank'
-                href={`https://twitter.com/intent/tweet?text=${props.selectedQuote.quote}`}
+                href={encodeURI(`https://twitter.com/intent/tweet?text=${props.selectedQuote.quote}`)}
             >
                 <FontAwesomeIcon icon={faTwitter} size="md"></FontAwesomeIcon>
             </IconButton>
